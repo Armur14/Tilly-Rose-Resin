@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilly Rose Resin | Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sticky-nav glassmorphism">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#shop">Shop Now</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <a href="#shop" class="cta-button shimmer">Shop the Collection</a>
+        </div>
+        <div class="hero-fade"></div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="about-header">
+                <div class="profile-container">
+                    <img src="tilly.jpg" alt="Tilly" class="profile-img">
+                </div>
+                <h2>About Me</h2>
+            </div>
+            <p class="bio-text glassmorphism">
+                Welcome to my shop! 🥰🌈 I am a recent art graduate with a passion for design and a focus on colour, and I love working in multiple mediums including resin to turn everyday items into funky, unique, colourful pieces of art. 🌈😁🤩 My shop is all about creating vibrant, unique pieces such as stylish Y2K-inspired rings, coasters, jewellery, and unique trays or ashtrays. 😄✨ I fell in love with using resin during the pandemic lockdown and have been creating ever since—with plans to bring you even more wonderful designs! 🤩💞 So keep your eyes peeled for more cute and funky products! 💃🏽💃🏽💃🏽
+            </p>
+        </section>
+
+        <section id="shop" class="shop-section">
+            <div class="category-picker">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="Ashtrays">Ashtrays</button>
+                <button class="category-btn" data-category="Rings">Rings</button>
+                <button class="category-btn" data-category="Trays/Trinkets">Trays/Trinkets</button>
+                <button class="category-btn" data-category="Coasters & Soap Dishes">Coasters & Soap Dishes</button>
+                <button class="category-btn" data-category="Skulls">Skulls</button>
+            </div>
+            
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be injected here via JS -->
+            </div>
+
+            <div class="view-more-container">
+                <button id="view-more-btn" class="cta-button" style="display: none;">View More</button>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-carousel">
+                <div class="review-card glassmorphism">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"So lovely! And seller informed me about delivery... Thoroughly recommend."</p>
+                    <p class="reviewer">- Wendy (04 Apr, 2026)</p>
+                </div>
+                <div class="review-card glassmorphism">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"I am very satisfied... everything is exactly as I imagined."</p>
+                    <p class="reviewer">- Sermin (18 Feb, 2026)</p>
+                </div>
+                <div class="review-card glassmorphism">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Very cute, one of a kind item 💜"</p>
+                    <p class="reviewer">- Alexandra (12 Feb, 2026)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <a href="https://www.instagram.com/tillyroseresin/" target="_blank" class="instagram-card glitch-hover glassmorphism">
+                <div class="ig-content">
+                    <svg class="ig-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                    <span>Follow me for behind-the-scenes resin pours and new drop alerts!</span>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tilly Rose Resin. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
